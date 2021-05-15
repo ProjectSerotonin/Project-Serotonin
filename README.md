@@ -12,7 +12,7 @@ One may argue that why even use fanatec at all if they are so hostile to the com
 
 # Current things that need help:
 
-- We can now decrypt the firmware, but I've still haven't managed to make ghidra disassemble it, help is wanted.
+- We can now decrypt the firmware, but I've still haven't managed to make ghidra disassemble it, help is wanted, info on the different wheel bases and their firmware files can be found in the docs folder.
 
 # Objectives
 
