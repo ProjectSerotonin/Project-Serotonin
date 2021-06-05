@@ -10,13 +10,19 @@ This will also hopefully open the door to opening up the fanatec ecosystem and h
 
 One may argue that why even use fanatec at all if they are so hostile to the community, this is true for those that can afford voting with their wallets, but this is not possible for less wealthy users such as myself, who while ended up with a fanatec wheel due to luck or a hand down (mine was obtained from a friend for example).
 
+# Tools
+
+Various tools produced
+
+- [vlfx](https://github.com/ProjectSerotonin/vlfx), a tool to extract the key and decrypt the firmware files
+
 # Current things that need help:
 
 - We can now decrypt the firmware, but I've still haven't managed to make ghidra disassemble it, help is wanted, info on the different wheel bases and their firmware files can be found in the docs folder.
 
 # Objectives
 
-- [x] Figure out how to decrypt the firmware files (this is currently done by dll injection into the firmware updater, a repository with the Rust code to do this will follow soon, but it would be nice to reimplement fanatec's own encryption mechanism which seems to just be using windows' cryptography and making such external tool extract the decryption key from the software).
+- [x] Figure out how to decrypt the firmware files (this is currently done through [vlfx](https://github.com/ProjectSerotonin/vlfx.git), which is also a rust library :D)
 - [ ] Disassemble the firmware and figure out if it's even possible to patch out rim DRM from it or if it's a purely electrical solution.
 - [ ] Creating a user friendly tool to patch your own firmware with ease.
 
